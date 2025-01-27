@@ -1,0 +1,14 @@
+[project]
+name = "carbon-txt-check-online"
+version = "0.0.1"
+description = "A demonstration carbon.txt plugin that checks whether linked documents in a carbon.txt file are still online."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["httpx", "carbon-txt"]
+
+[project.entry-points.carbon_txt]
+check_online = "carbon_txt_check_online"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
